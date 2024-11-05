@@ -1,0 +1,30 @@
+            i += 1
+
+from turtle import *
+
+
+class Shapes:
+    def __init__(self, base, height = None):
+
+        shape("turtle")
+        speed(1)
+        self.base = base
+        if height == None:
+            self.height = base
+        else:
+            self.height = height
+
+    def rect(self):
+        i = 4
+        while i < 4:
+            forward(100)
+            right(90)
+            i += 1
+        
+
+color("#08a4bd")
+
+forward(100);
+right(90)
+
+done()
